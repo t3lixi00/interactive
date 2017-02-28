@@ -1,0 +1,63 @@
+html {
+    background-image: url("../pic/final.gif");
+    background-size: 90%;
+}
+
+body {
+    background-color: transparent;
+}
+
+.element1 {
+    background-color: #8A0000;
+    width: 100px;
+    height: 50px;
+    margin: 5% 10%;
+    display: inline-block;
+}
+
+.element2 {
+    width: 100px;
+    height: 50px;
+    margin: 5% 10%;
+    float: right;
+    display: inline-block;
+
+}
+
+.element3 {
+    width: 100px;
+    height: 50px;
+    margin: 5% 10%;
+    display: block;
+
+}
+
+.element4 {
+    width: 100px;
+    height: 50px;
+    float: right;
+    margin: -5% 10%;
+    display: inline-block;
+
+}
+
+.element5 {
+    width: 100px;
+    height: 50px;
+    margin: 5% 10%;
+    display: block;
+
+}
+
+.element6 {
+    width: 100px;
+    height: 50px;
+    margin: -5% 10%;
+    float: right;
+    display: inline-block;
+
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7sS;

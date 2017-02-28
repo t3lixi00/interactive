@@ -1,0 +1,53 @@
+html{
+    background-image: url('https://maps.gstatic.com/mapfiles/santatracker/v201612080721/scenes/dorf/img/header-bg.svg');
+    background-size: cover ;
+}
+.container{
+    widtdh:60%;
+    height:400px;
+    margin: 2% 20%;
+    background: rgba(76, 175, 80, 0.3);
+
+}
+.part1 {
+    position: absolute;
+    margin: 5% 20%;
+}
+.part2 {
+    position: absolute;
+    margin: 10% 20%;
+}
+.part3 {
+    position: absolute;
+    margin: 15% 20%;
+}
+@media (max-width: 600px){
+
+    html{
+
+        background-size: contain ;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+
+    }
+    .part1 {
+        width: 100%;
+        position: relative;
+        margin:5% auto;
+
+    }
+    .part2 {
+        width: 100%;
+        position: relative;
+        margin:5% auto;
+    }
+    .part3 {
+        width: 100%;
+        position: relative;
+        margin:5% auto;
+    }
+}

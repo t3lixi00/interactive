@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2</title>
+     <link rel="stylesheet" href="css/studyPersonalCss.css">
+</head>
+<style>
+img {
+    max-width: 100%;
+    display:block;
+    height: auto;
+    border-color: blue;
+}
+
+</style>
+<body>
+  <ul>
+    <li><a href="Lab1.html">Lab1</a></li>
+    <li><a href="#">Lab2</a></li>
+    <li><a>Lab3</a></li>
+    <li><a>Lab4</a></li>
+    <li><a>Lab5</a></li>
+    <li><a>Lab6</a></li>
+    <li><a>Myself</a></li>
+  </ul>
+  <div class="container">
+    <h2>Lab 2</h2>
+    <br>
+      <h3>1.RWD</h3>
+       <h4>1.What is the purpose of the RWD?</h4>
+        <p>To fit in different size of screen. Because there is no design, or fixed or fluid, scales seamlessly beyond the context for which it was originally intended.
+          We need to design for an optimal(最佳的) viewing experience, but embed standards-based technologies into our designs to make them not only more flexible, but more adaptive to the media that renders them.</p>
+
+       <h4>2.How things are done before RWD?  What is the difference?</h4>
+        <p>Before RWD, people usually use desktop to view websites, so it is not a big deal between desktop landscape. Otherwise, flexible design (fluid grid, with flexible images) works well enough in this situation. </p>
+       <h4>3.How css media queries can help you building responsive web sites? </h4>
+        <p>media queries became a popular client-side technique for delivering a tailored style sheet to the iPhone, Android phones, and their ilk.According to different media type, we can set for different and optimal CSS. Thus, when users choosing for various size of screen, the website still appears to optimal version. </p>
+
+       <h4>Why to use em (font) based sizing for example margins?</h4>
+        <p>Because em is a new function from html5. If you set it for margins, when users using different size of screen, margin will change automatically according to screen size. Because margin would be related to body font size. So when body font size change, the margin will change too.
+      </p>
+
+      <h3>2.RWD Examples</h3>
+      <figure role="group">
+       <p>different size of screen</p>
+        <img src="pic/Capture2.png">
+      </figure>
+      <figure role="group">
+        <img src="pic/Capture3.png">
+      </figure>
+      <figure role="group">
+        <img src="pic/Capture5.png">
+      </figure>
+      <figure role="group">
+        <img src="pic/Capture4.png">
+      </figure>
+      <figure role="group">
+        <img src="pic/Capture6.png">
+      </figure>
+    <h3><a href="simple_html5.html">3.Simple Example1</a></h3>
+      <p>Question: After you have done the basic layout, how could you prevent user zooming the site on mobile?</p>
+      <p>The initial-scale property controls the zoom level when the page is first loaded.
+          The maximum-scale, minimum-scale, and user-scalable properties control how users are allowed to zoom the page in or out.
+         For example, initial-scale =1, which means that when users open the website, the scale is normal. if the maximum-scale is 1, which means
+         users cannot scale.</p>
+    <h3><a href="from_lab2/simple_html2.html">5.Simple Example2</a></h3>
+      <p>If you have a number of related images (or other content) with caption text,
+          you can use nested figure elements to associate both a group caption and an individual caption to each instance using the figcaption element.</p>
+      <h4><a href="from_lab2/simple_html2d.html">d.example</a> </h4>
+
+  </div>
+</body>
+</html>

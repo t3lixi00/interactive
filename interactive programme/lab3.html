@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab3</title>
+    <link rel="stylesheet" href="css/studyPersonalCss.css">
+    <link rel="stylesheet" href="css/lab3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/websocket.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        // snow function
+        $(function () {
+            $(document).snow({SnowImage: "pic/Snowflake.png"});
+        });
+    })
+</script>
+<body>
+<ul>
+    <li><a href="lab1.html">Lab1</a></li>
+    <li><a href="Lab2.html">Lab2</a></li>
+    <li><a href="lab3.html">Lab3</a></li>
+    <li><a href="Lab4.html">Lab4</a></li>
+    <li><a href="lab5.html">Lab5</a></li>
+    <li><a href="lab6.html">Lab6</a></li>
+
+</ul>
+<div class="container">
+    <div class="part1">
+        <input type="text" value="text" id="text">
+        <button type="submit" name="button" onclick="callWebSocket()">Submit</button>
+        <br>
+        <p id="message"></p>
+    </div>
+    <br><br>
+    <div class="part2">
+        <input id="inputText" type="text">
+        <button onClick="save()">Save</button>
+        <button onclick="load()">Load</button>
+        <p><a href="MVC.html">MVC</a>
+
+    </div>
+    <div class="part3">
+        <button onclick="playAudio()" type="button">Play Audio</button>
+        <button onclick="stopAudio()" type="button">Stop Audio</button>
+        <br><br>
+        <audio controls preload='auto' class="audio_volume_only" id="myAudio">
+            <source src="http://stream.basso.fi:8000/stream" type="audio/mp3">
+            <p>Your browser doesn't support HTML5 audio. Here is a <a href="http://stream.basso.fi:8000/stream">link to
+                the
+                audio</a> instead.</p>
+        </audio>
+    </div>
+
+</div>
+</body>
+<script src="js/snow.js"></script>
+<script src="js/localstorage.js"></script>
+<script src="js/auto.js"></script>
+</html>

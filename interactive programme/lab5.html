@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+    <link rel="stylesheet" href="css/lab5.css">
+    <link rel="stylesheet" href="css/studyPersonalCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lab5.js"></script>
+    <script type="text/javascript" src="js/jsonp.js"></script>
+</head>
+<body>
+<ul>
+    <li><a href="lab1.html">Lab1</a></li>
+    <li><a href="Lab2.html">Lab2</a></li>
+    <li><a href="lab3.html">Lab3</a></li>
+    <li><a href="Lab4.html">Lab4</a></li>
+    <li><a href="lab5.html">Lab5</a></li>
+    <li><a href="lab6.html">Lab6</a></li>
+
+</ul>
+<div class="container">
+    <h2>1. Getting familiar with jQuery</h2>
+    <h3>1. What you can do with the jQuery? How it can help you as web developer?</h3>
+    <p>It helps developers to to create animations, to change element CSS, select DOM elements, develop Ajax
+        applications.
+        Actually, It simplifies the javascript, which is faster and light weight than javascript . And it offers a wide
+        range of plugins for meet
+        various specific needs</p>
+
+    <h3>2. If you think our earlier participant list app, in what kind of issues you could use jQuery?</h3>
+    <p>We could use it to select name array and make “show” function.</p>
+
+    <h3>3. What are CDNs? What kind of benefits you get if you use them?</h3>
+    <p> It is a content delivery network, which means that, a servers’ system provides webpages or javascript library,
+        bootstrap library and so on. This way is faster and safer for website. Because servers will choose closer server
+        to
+        send response to customers, and if one server is not working, others server will still offer the library.
+    </p>
+
+    <br>
+    <h2>2.Name List App</h2>
+    <form class="nameList">
+        <span>name</span>
+        <input id="name" type="text">
+        <input type="button" id="button" value="Add person">
+    </form>
+    <p id="nameList1"></p>
+    <br>
+    <h2>3.Ajax</h2>
+    <p>Notice: this one is made by json, so you need extension</p>
+    <button id="button_Ajax">Load with ajax</button>
+    <p class="name_Ajax"></p>
+    <br><br>
+    <h2>4.Ajax jsonp</h2>
+    <button onclick="show()">Load with jsonp</button>
+    <p id="jsonp"></p>
+</div>
+</body>
+
+</html>

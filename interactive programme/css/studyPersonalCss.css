@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+ul li{
+    float: left;
+   //here is the important part to make them inline, display inline does not work..
+}
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #dddddd;
+
+}
+
+ul li a:hover{
+    background-color: pink;
+}
+ul li a:active{
+    color: #FDC2C4;
+}

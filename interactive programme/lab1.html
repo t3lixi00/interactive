@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="css/studyPersonalCss.css">
+</head>
+<style>
+    html {
+        background-image: url("https://maps.gstatic.com/mapfiles/santatracker/v201612080721/scenes/dorf/img/header-bg.svg");
+    }
+
+    .container {
+        width: 90%;
+        margin: auto 5%;
+        background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        border-color: blue;
+    }
+
+</style>
+
+<body>
+<ul>
+    <li><a href="lab1.html">Lab1</a></li>
+    <li><a href="Lab2.html">Lab2</a></li>
+    <li><a href="lab3.html">Lab3</a></li>
+    <li><a href="Lab4.html">Lab4</a></li>
+    <li><a href="lab5.html">Lab5</a></li>
+    <li><a href="lab6.html">Lab6</a></li>
+
+</ul>
+<div class="container">
+    <h2>Lab 1</h2>
+    <br>
+    <h3>1.Definitions</h3>
+
+    <p>HTML: Hyper Text Markup Language, is the container for Web pages. whereas hyper text means that non-text element
+        like pictures, links, music, or programme and so on. </p>
+    <p>CSS:Cascading Style Sheets, is a style sheet language used for decorating web pages and animating them.</p>
+    <p>JAVASCRIPT: is an object-oriented computer programming language commonly used to create interactive effects
+        within web browsers.</p>
+    <p>HTTP: is Hypertext Transfer Protocol, the set of rules for transferring files on the world wide web.</p>
+    <p>HTML5: the fifth version of HTML standard. The main difference is adding new elements, new types of form control
+        and so on. </p>
+    <p>DHTML: Dynamic HyerText Markup Language, is a combination of Web development technologies used to create
+        dynamically changing websites.
+        Web pages may include animation, dynamic menus and text effects</p>
+    <br>
+    <h3>2. Coding conventions</h3>
+
+    <p>Coding convention is standard of coding programme style. It does not mean right or wrong, but it makes people
+        easy to understand codes.</p>
+    <p>About why we need it ? I think, firstly, it is the important experience from many workers or teams, secondly, it
+        is beneficial for the group working. Any member of a development should be able to read the code of another
+        member.</p>
+
+    <h3>3. HTML5</h3>
+    <a href="simple_html5.html">example</a>
+
+    <h3>5. Dynamic html</h3>
+    <form class="nameList">
+        <span>name</span>
+        <input id="name" type="text">
+        <input type="button" value="Add person" onclick="addPerson()">
+
+    </form>
+    <p id="nameList1"></p>
+    <br><br>
+</div>
+</body>
+
+<script>
+    var nameList = [];
+    var output = document.getElementById("nameList1");
+    var newName = document.getElementById("name");
+    function addPerson() {
+        console.log("adding work " + newName.value);
+
+        nameList.push(newName.value);
+        show();
+    }
+
+    function show() {
+        output.innerHTML = "";
+        output.innerHTML += nameList.join("<br>");
+    }
+</script>
+</html>
